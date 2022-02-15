@@ -1,13 +1,13 @@
 import cv2
 
 cap = cv2.VideoCapture(0)
-cap.set(3, 640)
-cap.set(4, 480)
+cap.set(3, 160)
+cap.set(4, 120)
 
 
 while True:
     success, image = cap.read()
-
+    print(image.shape[0])
     image_greyscale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     image_lines = cv2.Canny(image_greyscale, 50, 300)
