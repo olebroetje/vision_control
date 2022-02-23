@@ -4,6 +4,7 @@ cap = cv2.VideoCapture(0)
 
 while True:
 
+
     ret_cap, frame = cap.read()
     (w, h) = (frame.shape[1], frame.shape[0])
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
