@@ -1,3 +1,10 @@
+MOVE_LEFT = 1  # GPIO 2
+MOVE_RIGHT = 2  # GPIO 3
+MOVE_FORWARD = 3  # GPIO 4
+
+#RPi.GPIO
+
+
 class MotorController:
 
     def __init__(self, speed: int):

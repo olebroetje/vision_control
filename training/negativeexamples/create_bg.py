@@ -12,7 +12,7 @@ def main():
         os.rename(path+file, path+f"img{i}.jpg")
         print(file)
         i = i+1
-        bg.write(f"img/{file}\n")
+        bg.write(f"img/img{i}.jpg\n")
 
     bg.close()
 

@@ -11,8 +11,8 @@ def main():
     for file in directory:
         os.rename(path + file, f"{path}img{i}.jpg")
         print(file)
-        i = i+1
-        info.write(f"img/{file}\n")
+        info.write(f"img/img{i}.jpg\n")
+        i = i + 1
 
     info.close()
 
