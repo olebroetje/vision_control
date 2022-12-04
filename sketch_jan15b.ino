@@ -2,7 +2,7 @@
 #define SHOULD_DRIVE 1
 #define MOTORCONTROL_RIGHT 2
 #define MOTORCONTROL_LEFT 3
-#define MOTORCONTOL_STRAIGHT 4
+#define MOTORCONTROL_STRAIGHT 4
 #define INPUT_CONTROL 6
 #define OUTPUT_CONTROL 7
 
@@ -26,7 +26,7 @@ void setup() {
 
 void loop() {
   while (digitalRead(SHOULD_DRIVE) == true) {
-    if (digitalRead(MOTORCONTOL_STRAIGHT) == HIGH) {
+    if (digitalRead(MOTORCONTROL_STRAIGHT) == HIGH) {
       right->run(FORWARD)
       left->run(FORWARD)
     } else if (digitalRead(MOTORCONTROL_RIGHT == HIGH)) {
